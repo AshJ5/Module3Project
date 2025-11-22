@@ -1,4 +1,4 @@
-# Install Guide (this may change)
+# Things to Install (this may change)
 ---
 
 ## CSS:

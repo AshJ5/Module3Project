@@ -1,4 +1,4 @@
-# Module3Project
+# Module 3 Project
 
 # Create a Full Stack Application 
 
@@ -24,24 +24,18 @@ Server Design: Specify libraries, routes, parameters (with datatypes/object sche
 - Database Creation: Use Mongoose for schema/model creation and data seeding if default data is needed for your app.
 
 ## Testing & Deployment
-
-Integration Tests
-Local App Testing
-Are the backend, frontend and database all running and able to communicate?
-Is a user able to successfully access and use the application?
-App Deployment
- 
-
-Are the backend, frontend and database all running outside of your team's development machines and able to communicate?
- 
-
-Deployed App Testing
-Are users able to access and successfully utilize app features?
-Unit Tests
-Does a particular page open?
-Does a particular feature on the page look how it should?
-Does a particular feature function as it should?
-Final Submission
-
-Documentation & App Links: Provide links to all documentation, designs, diagrams, project management boards, and deployment.
-App Execution: Include links for running the app (and instructions for starting/running the application if applicable).
+### Integration Tests
+#### Local App Testing
+- Are the backend, frontend and database all running and able to communicate?
+- Is a user able to successfully access and use the application?
+#### App Deployment
+- Are the backend, frontend and database all running outside of your team's development machines and able to communicate?
+#### Deployed App Testing
+- Are users able to access and successfully utilize app features?
+#### Unit Tests
+- Does a particular page open?
+- Does a particular feature on the page look how it should?
+- Does a particular feature function as it should?
+## Final Submission
+- Documentation & App Links: Provide links to all documentation, designs, diagrams, project management boards, and deployment.
+- App Execution: Include links for running the app (and instructions for starting/running the application if applicable).
