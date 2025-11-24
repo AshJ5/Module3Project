@@ -1,0 +1,146 @@
+{
+  "scenes": {
+    "opening": {
+      "id": "opening",
+      "title": "The Crime Scene",
+      "description": "You arrive at the Department of Edible Investigations (DEI) kitchen. The fridge door is wide open. Inside: chaos.",
+      "narration": "Your eyes scan the shelves. Condiments. Leftover pizza. Three-week-old yogurt. But one item is missing: The Legendary Triple-Decker Turbo Sandwich—the holy grail of office snacks.",
+      "choices": [
+        {
+          "id": "interrogate_tina",
+          "text": "Question Tina the Intern",
+          "next": "tina_scene"
+        },
+        {
+          "id": "interrogate_hank",
+          "text": "Question Hank the Janitor",
+          "next": "hank_scene"
+        },
+        {
+          "id": "visit_lab",
+          "text": "Inspect Dr. Picklesworth's Lab",
+          "next": "lab_scene"
+        }
+      ]
+    },
+    "tina_scene": {
+      "id": "tina_scene",
+      "title": "Interrogation: Tina the Intern",
+      "description": "Tina is vibrating in place, clutching an empty energy drink can.",
+      "narration": "TINA: 'Oh my god, oh my god! I SAW IT! The sandwich... it had LEGS! Little tiny legs! It SCREAMED \"I AM FREEEEE!\" and just... RAN OUT OF HERE!'",
+      "choices": [
+        {
+          "id": "believe_tina",
+          "text": "Believe her story about the sentient sandwich",
+          "next": "investigate_more_tina"
+        },
+        {
+          "id": "suspect_tina",
+          "text": "Note that she's had way too much caffeine",
+          "next": "investigate_more_hank"
+        }
+      ]
+    },
+    "investigate_more_tina": {
+      "id": "investigate_more_tina",
+      "title": "Follow-Up Investigation",
+      "description": "After Tina's story, you have two more people to question.",
+      "narration": "Tina's story is wild, but you've learned to keep an open mind in food crime investigation. Time to gather more evidence.",
+      "choices": [
+        {
+          "id": "see_hank_after_tina",
+          "text": "Question Hank the Janitor",
+          "next": "hank_scene"
+        },
+        {
+          "id": "see_lab_after_tina",
+          "text": "Inspect Dr. Picklesworth's Lab",
+          "next": "lab_scene"
+        }
+      ]
+    },
+    "hank_scene": {
+      "id": "hank_scene",
+      "title": "Interrogation: Hank the Janitor",
+      "description": "Hank is sweeping near the kitchen, carefully avoiding the fridge area.",
+      "narration": "HANK: 'It wasn't me, boss. I got a condition. Sandwich intolerant. If I go near one, my stomach gets all weird. Can't eat 'em.'",
+      "choices": [
+        {
+          "id": "inspect_hank_trash",
+          "text": "Inspect his trash can for evidence",
+          "next": "inspect_hank_garbage"
+        },
+        {
+          "id": "believe_hank",
+          "text": "Accept his explanation",
+          "next": "investigate_more_hank"
+        }
+      ]
+    },
+    "inspect_hank_garbage": {
+      "id": "inspect_hank_garbage",
+      "title": "Trash Investigation",
+      "description": "You peer into Hank's trash can with your investigative gloves on.",
+      "narration": "You find: gum wrappers, a half-eaten apple, cleaning supplies receipts... but NO sandwich evidence. Hank watches nervously but says nothing.",
+      "choices": [
+        {
+          "id": "continue_after_hank",
+          "text": "Continue your investigation",
+          "next": "investigate_more_hank"
+        }
+      ]
+    },
+    "investigate_more_hank": {
+      "id": "investigate_more_hank",
+      "title": "Final Investigation Phase",
+      "description": "You've questioned Hank. One more source remains.",
+      "narration": "Time to check out Dr. Picklesworth's 'lab.' Something doesn't add up.",
+      "choices": [
+        {
+          "id": "visit_lab_final",
+          "text": "Inspect Dr. Picklesworth's Lab",
+          "next": "lab_scene"
+        }
+      ]
+    },
+    "lab_scene": {
+      "id": "lab_scene",
+      "title": "Interrogation: Dr. Picklesworth's Lab",
+      "description": "You enter a cluttered office filled with beakers, sandwich molds, and suspicious equipment.",
+      "narration": "DR. PICKLESWORTH: 'Ah, Detective Bramble! Wonderful timing. I was just... uh... DEFINITELY NOT working on anything involving your sandwich.'",
+      "narration_continued": "You notice a large wooden crate in the corner labeled 'DEFINITELY NOT HOLDING A LIVING SANDWICH' in frantic handwriting. Something inside moves.",
+      "choices": [
+        {
+          "id": "open_crate",
+          "text": "Open the suspicious crate immediately",
+          "next": "ending_crate"
+        },
+        {
+          "id": "chase_sandwich",
+          "text": "Chase the moving crate (or was that something else?)",
+          "next": "ending_chase"
+        }
+      ]
+    },
+    "ending_crate": {
+      "id": "ending_crate",
+      "title": "ENDING 1: The Sandwich Conspiracy",
+      "description": "You rip open the crate.",
+      "narration": "Inside, the Triple-Decker Turbo Sandwich sits perfectly intact... wearing tiny aviator goggles. It looks at you. It BLINKS.",
+      "narration_continued": "DR. PICKLESWORTH: 'I... I gave it sentience, Detective. For SCIENCE. I wanted it to experience the transcendental joy of tasting itself.'",
+      "sandwich_says": "'You people are absolutely insane. I'm leaving.'",
+      "ending_description": "The sandwich hops out the window and disappears into the city skyline. Dr. Picklesworth starts crying. Your boss later promotes you for 'solving' the case.",
+      "ending_title": "The Sandwich Lives Its Best Life"
+    },
+    "ending_chase": {
+      "id": "ending_chase",
+      "title": "ENDING 2: The Great Chase",
+      "description": "You dash toward the crate, but it's already gone.",
+      "narration": "You sprint down the hallway, following the sound of movement. You round the corner at full speed and dive toward the sandwich—",
+      "narration_continued": "—and crash directly into a ROOMBA. The sandwich is taped to the top, going in circles.",
+      "boss_interruption": "Your boss appears in the doorway: 'Benny... what are you doing tackling our office vacuum?'",
+      "narration_final": "They take you aside and quietly suggest you 'take a vacation.' Hank quietly eats the sandwich in the break room while everyone watches the security footage of your magnificent crash.",
+      "ending_title": "Mandatory Leave"
+    }
+  }
+}
